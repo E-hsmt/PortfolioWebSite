@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+
+/* --------------------------------------------------
+メインエリア（サイト共通）
+-------------------------------------------------- */
+.main {
+    flex: 1 0 auto;
+}
+
+h2 {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/site_icon_808080.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+h2::after {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/site_icon_808080.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+/* --------------------------------------------------
+メインエリア
+（index.html）
+-------------------------------------------------- */
+.top_main_area {
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.top_above_area {
+    margin-bottom: 40px;
+    background-color: #dcdcdc;
+    background-image: url(../img/site_icon_e6e6e6.png);
+    background-position: center;
+}
+
+.top_above_title_area {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_page_title {
+    font-family: serif;
+    font-size: 50px;
+    line-height: 1.45;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.top_page_description {
+    color: #1a1a1a;
+    width: 50%;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.top_below_area {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.top_below_title_area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_below_title {
+    margin-bottom: 10px;
+}
+
+.top_below_contents_area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top_card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.top_card_title {
+    margin-bottom: 5px;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.top_card_descriptions {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.top_card_image {
+    text-align: center;
+}
+
+.top_card_img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/* --------------------------------------------------
+メインエリア
+（outline.html、exhibition.html、collections.html）
+-------------------------------------------------- */
+.main_area {
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* --------------------------------------------------
+メインエリア＞インデックス部分
+（outline.html、exhibition.html、collections.html）
+-------------------------------------------------- */
+.aside {
+    width: 20%;
+    padding: 20px;
+}
+
+.index_title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.index_item {
+    margin-bottom: 5px;
+}
+
+.index_link {
+    text-decoration: none;
+    font-family: serif;
+}
+
+.index_link:hover {
+    color: #1a1a1a;
+}
+
+
+/* --------------------------------------------------
+メインエリア＞メインコンテンツ部分
+（outline.html、exhibition.html、collections.html）
+-------------------------------------------------- */
+.article {
+    width: 80%;
+    padding: 20px;
+}
+
+.page_title {
+    margin-bottom: 5px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.section {
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.section_title {
+    margin-bottom: 25px;
+}
+
+.section_contents {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.section_item {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+
+/* --------------------------------------------------
+メインエリア＞メインコンテンツ部分
+（outline.html）
+-------------------------------------------------- */
+.outline_about {
+    text-align: justify;
+}
+
+.outline_label {
+    width: 25%;
+}
+
+.outline_descriptions {
+    width: 75%;
+}
+
+
+/* --------------------------------------------------
+メインエリア＞メインコンテンツ部分
+（exhibition.html）
+-------------------------------------------------- */
+.exhibition_title_area {
+    padding-left: 10px;
+    margin-bottom: 25px;
+    border-left: solid #666 5px;
+}
+
+.exhibition_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.exhibition_top_img {
+    width: 80%;
+}
+
+.exhibition_about {
+    text-align: justify;
+}
+
+.exhibition_label {
+    width: 10%;
+}
+
+.exhibition_description {
+    width: 90%;
+}
+
+
+/* --------------------------------------------------
+メインエリア＞メインコンテンツ部分
+（exhibition.html、collections.html）
+-------------------------------------------------- */
+.art_image_area {
+    width: 60%;
+}
+
+.art_img {
+    width: 100%;
+}
+
+.art_description_area {
+    width: 40%;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.art_title {
+    font-weight: bold;
+}
+
+.art_artist {
+    font-size: 13px;
+}
+
+.art_year {
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.art_description {
+    font-size: 13px;
+    text-align: justify;
+}

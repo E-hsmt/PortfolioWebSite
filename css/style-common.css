@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+
+/* --------------------------------------------------
+全体（サイト共通）
+-------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: sans-serif;
+    font-weight: normal;
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* --------------------------------------------------
+ヘッダーエリア（サイト共通）
+-------------------------------------------------- */
+.header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.header_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site_home_link {
+    text-decoration: none;
+    font-size: 23px;
+    font-family: serif;
+}
+
+.site_home_link:hover {
+    color: #1a1a1a;
+}
+
+.site_home_link::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/site_icon_808080.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.site_home_link::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/site_icon_808080.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_item {
+    padding: 10px;
+}
+
+.nav_link {
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    color: #1a1a1a;
+}
+
+
+/* --------------------------------------------------
+フッターエリア（サイト共通）
+-------------------------------------------------- */
+.footer {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+.footer_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    font-size: 10px;
+}
+
+
+/* --------------------------------------------------
+トップページリンク（サイト共通）
+-------------------------------------------------- */
+.pagetop {
+    color: #fff;
+    background-color: #1a1a1a;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
